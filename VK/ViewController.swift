@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         // Проверяем, верны ли они
         if (login == "admin@vk.com" || login == "89991234567") && password == "123456" {
             print("успешная авторизация")
+//            prepare(for: <#T##UIStoryboardSegue#>, sender: <#T##Any?#>)
         } else {
 //            print("неуспешная авторизация")
             let alertController = UIAlertController(title: "Ошибка авторизации:", message: "неверный логин или пароль", preferredStyle: .alert)
