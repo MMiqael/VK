@@ -1,5 +1,5 @@
 //
-//  GroupSearchTableViewCell.swift
+//  GroupsTableViewCell.swift
 //  VK
 //
 //  Created by Микаэл Мартиросян on 15.05.2020.
@@ -8,17 +8,16 @@
 
 import UIKit
 
-class GroupSearchTableViewCell: UITableViewCell {
-
+class GroupsTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var groupsAvatar: UIImageView!
+    @IBOutlet weak var groupsName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
 }

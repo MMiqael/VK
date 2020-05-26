@@ -1,14 +1,20 @@
 //
-//  GroupSearchTableViewController.swift
+//  TestTVController.swift
 //  VK
 //
-//  Created by Микаэл Мартиросян on 15.05.2020.
+//  Created by Микаэл Мартиросян on 24.05.2020.
 //  Copyright © 2020 Микаэл Мартиросян. All rights reserved.
 //
 
 import UIKit
 
-class GroupSearchTableViewController: UITableViewController {
+class TestTVController: UITableViewController {
+    
+    var testArray: [TestStruct] = [TestStruct(zzzImage: UIImage(named: "Apple")!, zzzLable: "Apple"),
+    TestStruct(zzzImage: UIImage(named: "Microfsoft")!, zzzLable: "Microsoft"),
+    TestStruct(zzzImage: UIImage(named: "Facebook")!, zzzLable: "Facebook"),
+    TestStruct(zzzImage: UIImage(named: "Swift")!, zzzLable: "Swift")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,25 +28,27 @@ class GroupSearchTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let testCVController = segue.destination as? TestCVController else { return }
+        if let indexPath = tableView.indexPathForSelectedRow {
+            testCVController.testCVArray = testArray
+            testCVController.iPath = indexPath
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return testArray.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "testTVCell") as! TestTVCell
 
-        // Configure the cell...
+        cell.zzz.image = testArray[indexPath.row].zzzImage
+        cell.zzzZ.text = testArray[indexPath.row].zzzLable
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,4 +95,10 @@ class GroupSearchTableViewController: UITableViewController {
     }
     */
 
+}
+
+
+struct TestStruct {
+    var zzzImage: UIImage
+    var zzzLable: String
 }
