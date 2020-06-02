@@ -38,8 +38,3 @@ class GroupSearchTableViewController: UITableViewController {
         return cell
     }
 }
-
-struct GroupSearchList: Equatable {
-     var name: String
-     var avatar: UIImage
- }
