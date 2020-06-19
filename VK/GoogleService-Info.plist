@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>141967257862-dgi73b61fgkiji4rl4p10l552625bsm3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.141967257862-dgi73b61fgkiji4rl4p10l552625bsm3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyChaX2odz3U5T1kFXKgYMO_eD3bpR_Ay1I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>141967257862</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.miqaelmartirosyan.VK</string>
+	<key>PROJECT_ID</key>
+	<string>singupwithphone</string>
+	<key>STORAGE_BUCKET</key>
+	<string>singupwithphone.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:141967257862:ios:5ca8c3ad6ec437d88a2e87</string>
+	<key>DATABASE_URL</key>
+	<string>https://singupwithphone.firebaseio.com</string>
+</dict>
+</plist>
