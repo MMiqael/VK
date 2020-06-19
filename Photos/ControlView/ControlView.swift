@@ -55,4 +55,5 @@ class ControlView: UIView {
     @IBAction func shareButton(_ sender:   UIButton) {
         print("tryShare")
     }
+    
 }

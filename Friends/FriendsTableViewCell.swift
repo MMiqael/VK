@@ -17,7 +17,8 @@ class FriendsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var friendAvatar:  UIImageView! {
         didSet {
-            friendAvatar.layer.cornerRadius  = self.friendAvatar.frame.size.width / 2
+            friendAvatar.layer.cornerRadius = self.friendAvatar.frame.size.width / 2
+            friendAvatar.contentMode = .scaleAspectFill
         }
     }
 
@@ -37,7 +38,7 @@ class FriendsTableViewCell: UITableViewCell {
         }
     }
     
-    @IBAction func avatarView(_ sender: AvatarPrototype) {
+    @IBAction func friendAvatar (_ sender: AvatarPrototype) {
     }
     
     

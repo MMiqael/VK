@@ -1,5 +1,5 @@
 //
-//  GroupSearchList.swift
+//  FriendsStructure.swift
 //  VK
 //
 //  Created by Микаэл Мартиросян on 24.05.2020.
@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-struct GroupSearchList: Equatable {
+struct FriendsStructure {
     var name: String
+    var city: String
     var avatar: UIImage
 }

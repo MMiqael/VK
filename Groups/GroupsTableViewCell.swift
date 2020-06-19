@@ -10,7 +10,12 @@ import UIKit
 
 class GroupsTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var groupsAvatar: UIImageView!
+    @IBOutlet weak var groupsAvatar: UIImageView! {
+        didSet {
+            groupsAvatar.layer.cornerRadius = self.groupsAvatar.frame.size.width / 2
+            groupsAvatar.contentMode = .scaleAspectFit
+        }
+    }
     @IBOutlet weak var groupsName: UILabel!
     
     override func awakeFromNib() {

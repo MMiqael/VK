@@ -10,8 +10,8 @@ import UIKit
 
 class GroupsTableViewController: UITableViewController {
 
-    var groups = [GroupSearchList] ()
-    
+    var groups = [GroupSearchStructure] ()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

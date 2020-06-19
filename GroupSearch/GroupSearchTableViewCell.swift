@@ -10,7 +10,12 @@ import UIKit
 
 class GroupSearchTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var groupSearchAvatar: UIImageView!
+    @IBOutlet weak var groupSearchAvatar: UIImageView! {
+        didSet {
+            groupSearchAvatar.layer.cornerRadius = self.groupSearchAvatar.frame.size.width / 2
+            groupSearchAvatar.contentMode = .scaleAspectFit
+        }
+    }
     @IBOutlet weak var groupSearchName: UILabel!
     
     override func awakeFromNib() {

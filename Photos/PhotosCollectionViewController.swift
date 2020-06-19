@@ -10,7 +10,7 @@ import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
     
-    var photoList: [FriendsList]  = []
+    var photoList: [FriendsStructure]  = []
     var indexPathArray: IndexPath = []
     
     
@@ -27,7 +27,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photosCell", for: indexPath) as! PhotosCollectionViewCell
     
-        cell.photo.image = photoList[indexPathArray.row].avatar
+        cell.photo.image = photoList[indexPathArray.section].avatar
     
         return cell
     }
